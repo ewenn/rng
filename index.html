@@ -1,1 +1,87 @@
-desktop/CODE/RandomName.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+function generator(){
+var wordlist1 = ["Ad hoc","Informal","Designated","Unofficial","Official","Interactive","Special","International","Advisory","High-level"];
+var wordlist2 = ["Committee","Convention","Commission","Council","Judicial Mechanism","Group","Working Group","Group of Friends","Bureau","Department","Discussion","Dialogue","Forum"];
+var wordlist4 = ["on","for","to discuss","for the consideration of","for the elimination of","on the question of"];
+var wordlist5 = ["Peaceful","Draft","Outstanding","Nonviolent","Relevant","Interested","Uninterested","Formal","Informal","Unresolved"]
+var wordlist3 = ["Conferences","Questions","Conventions","Working Papers","Nonpapers","Unmade Decisions","Draft Resolutions","Nonstate Actors","Persons","Actors","Parties","Negotiations","Situations"];
+
+var randomNumber1 = parseInt(Math.random() * wordlist1.length);
+var randomNumber2 = parseInt(Math.random() * wordlist2.length);
+var randomNumber4 = parseInt(Math.random() * wordlist4.length);
+var randomNumber3 = parseInt(Math.random() * wordlist3.length);
+var randomNumber5 = parseInt(Math.random() * wordlist5.length);
+var name = wordlist1[randomNumber1] + " " + wordlist2[randomNumber2] + " " + wordlist4[randomNumber4] + " " + wordlist5[randomNumber5] + " " + wordlist3[randomNumber3];
+if(document.getElementById("result")){
+				document.getElementById("placeholder").removeChild(document.getElementById("result"));
+			}
+			var element = document.createElement("div");
+			element.setAttribute("id", "result");
+			element.appendChild(document.createTextNode(name));
+			document.getElementById("placeholder").appendChild(element);
+		}
+
+</script>
+	<style type="text/css">
+		body{font-family: times new roman, serif;}
+		#wrapper{border-left:2px solid #ffffff; border-top:2px solid #ffffff; border-right:2px solid #ffffff; border-bottom:2px solid #ffffff; margin-top:10px;padding: 0 20px;width: 700px font-family: times new roman, serif;}
+		#generator{background:#ffffff;border-top:2px solid #ffffff;margin:30px 0;font-size:28px;font-weight:bold;padding:50px 0 20px;text-align:center;-moz-border-radius: 5px;-webkit-border-radius: 5px;}
+		#generator input{font-size:16px;font-weight:normal;margin-top: 30px}
+		#footer{
+   position:fixed;
+   left:10px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#fff;}
+		#footer a{color:#999}
+		h2{
+		text-align: center;
+		}
+		.alignleft{
+		float:left;
+		}
+		.alignright{
+		float:right;
+		}
+	</style>
+<title>UNofficial UN Meetings</title>
+</head>
+<body onload="generator()">
+<div id="wrapper">
+<div style="background:#ffffff;">
+<img src="http://gdurl.com/q0vY">
+</div>
+<div style="background:#99CCFF; border: 1px solid #00CCFF; font-weight:bold; padding:5px; text-align-vertical: bottom;">   
+<h2>Official Meetings</h2>
+</div>
+<div>
+&nbsp;
+</div>
+<div style="border-top: 1px solid #000000; font-family: times new roman, serif; font-weight: bold; font-size:14px; text-align: center; padding-top: 25px;">
+<p id="demo"></p>
+<script type="text/javascript">
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+</div>
+<div id="generator" >
+			<div id="placeholder"></div>
+			<input type="button" value="Next Meeting" onclick="generator()" />		
+		</div>
+		<div style="clear:both; font-family: times new roman, serif; font-weight: normal; font-size: 13px;">
+		<p class="alignleft">10:00-13:00</p>
+		<p class="alignright">Trusteeship Council Chamber</p>
+		</div>
+		<div id="footer">
+<a href="https://twitter.com/eweNitedNations" class="twitter-follow-button" data-show-count="false">Follow @eweNitedNations</a>
+<script>!function(d,s,id){var js,fjs= d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');</script>
+</div>
+		</div>
+</body>
+</html>
